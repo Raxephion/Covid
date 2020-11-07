@@ -21,3 +21,5 @@ df['month'] = pd.to_datetime(df[['year', 'month' ,'day']])
 
 
 ax = df.plot(x='month', y = ['cases','deaths'], title = 'Covid Statistics for South Africa', figsize=(10,7), grid=True)
+ad = df.plot(x='month', y = 'cases', title = 'Covid Statistics for South Africa in 2020', figsize=(10,7), grid=True)
+az = df.plot(x='month', y = 'deaths', title = 'Covid Statistics for South Africa in 2020', figsize=(10,7), grid=True)
