@@ -10,7 +10,7 @@ Global Covid-19 Statistics from the ECDC
 
 import pandas as pd
 
-x=input("What countries data would you like to get? ")
+x=input("What countries data would you like to get? ") # Look up dataframe to get correct string name for country
 
 url = 'https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide.xlsx'
 df_raw = pd.read_excel(url)
