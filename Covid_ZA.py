@@ -27,4 +27,4 @@ df['month'] = pd.to_datetime(df[['year', 'month' ,'day']])
 
 ax = df.plot(x='month', y = ['cases','deaths'], title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
 ay = df.plot(x='month', y = 'cases', title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
-az = df.plot(x='month', y = 'deaths', title = 'Covid Statistics for'+x, figsize=(10,5), grid=True)
+az = df.plot(x='month', y = 'deaths', title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
