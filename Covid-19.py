@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Sat Nov  7 10:15:20 2020
 
 @author: Pierre-Henri Rossouw
@@ -27,4 +34,4 @@ df['month'] = pd.to_datetime(df[['year', 'month' ,'day']])
 
 ax = df.plot(x='month', y = ['cases','deaths'], title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
 ay = df.plot(x='month', y = 'cases', title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
-az = df.plot(x='month', y = 'deaths', title = 'Covid Statistics for '+x, figsize=(10,5), grid=True)
+az = df.plot(x='month', y = 'deaths', title = 'Covid Statistics for '+x, figsize=(10,5), grid=True, color='r')
